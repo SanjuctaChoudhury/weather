@@ -1,7 +1,7 @@
 const express=require("express")
 const app= express()
 const path=require("path")
-const port =3000
+const port =process.env.PORT||3000
 //public folder's static path
 const staticp=path.join(__dirname,"../public")
 console.log(staticp)
